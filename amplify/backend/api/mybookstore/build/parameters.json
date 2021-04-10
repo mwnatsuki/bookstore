@@ -1,0 +1,14 @@
+{
+    "CreateAPIKey": 1,
+    "AppSyncApiName": "mybookstore",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authmybookstore700a80af",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplify-mybookstore-prod-114451-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/ed2876a48b599bfd9358d3ac026a7db7dec56d20"
+}
